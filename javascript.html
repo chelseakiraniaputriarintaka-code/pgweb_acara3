@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+  Nama: <i id="value_nama"></i>
+  <br>
+  Umur: <i id="value_umur"></i> 
+
+
+  <script>
+    // String Variable
+    var nama = "Narindu";
+
+    //Number variable
+    let umur = 19;
+    let tinggi = 168;
+
+    //Array
+    let makanan = ["bakso", "bakmie", "dimsum"];
+
+    //Menambahkan ke jendela console
+    console.log("Nama:" + nama);
+    console.log("Umur:" + umur);
+    console.log("Tinggi:" + tinggi + "cm");
+    console.log(makanan[2]);
+
+   // Aritmatic Operations
+    let a = 6;
+    let b = 8;
+
+    let jumlah = a + b;
+    console.log("Hasil Penjumlahan a & b:" + jumlah);
+
+    let kurang = a - b;
+    console.log("Hasil Pengurangan a & b:" + kurang);
+
+    let kali = a * b;
+    console.log("Hasil Perkalian a & b:" + kali);
+
+    let bagi = a / b;
+    console.log("Hasil Pembagian a & b:" + bagi);
+
+    let sisa = a % b;
+    console.log("Hasil sisa pembagian a & b:" + sisa);
+
+    let pangkat = b ** 2; 
+    console.log("Hasil Pangkat b:" + pangkat);
+
+
+    // Conditional Statements
+    let nilai = 85; 
+
+    if (nilai >= 90){
+        console.log("Nilai A");
+    } else if (nilai >= 80){
+        console.log("Nilai B"); 
+    } else if (nilai >= 70){
+        console.log("Nilai C");
+    } else if (nilai >= 60){
+        console.log("Nilai D");
+    }
+        
+
+    // Looping
+    for (let i = 1; i <= 5; i++){
+        console.log(i);
+    }
+
+    //Function
+    function penjumlahan (a, b){
+    return console.log("Hasil penjumlahan: " + (a + b));
+    }
+
+    //Memanggil fungsi penjumlahan
+    penjumlahan(41, 87)
+
+    // Menampilkan nama ke halaman web (DOM)
+    document.getElementById("value_nama").innerHTML = nama;
+    document.getElementById("value_umur").innerHTML = umur + "tahun";
+
+  </script>  
+
+</body>
+</html>
